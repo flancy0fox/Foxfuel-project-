@@ -1,0 +1,12 @@
+匯率口袋｜單層檔案 GitHub APK 編譯說明
+
+1. 解壓縮本 ZIP，裡面所有檔案都在同一層，沒有隱藏資料夾。
+2. 在 GitHub 建立一個 Repository，把 index.html、manifest.json、icon-192.png、icon-512.png、package.json、capacitor.config.json 上傳到專案最外層。
+3. 在 GitHub 專案選 Actions → New workflow → set up a workflow yourself。
+4. 把編輯器上方的檔案路徑改成 .github/workflows/build-apk.yml（GitHub 規定，必須使用這個路徑）。
+5. 開啟下載包裡的 build-apk.yml，複製全部內容貼進 GitHub 編輯器，按 Commit changes。
+6. 回到 Actions，點 Build Android APK → Run workflow，等待完成。
+7. 下載 currency-pocket-android-apk，解壓後的 app-debug.apk 可安裝於 Android 手機／平板。
+
+注意：build-apk.yml 放在 GitHub 專案根目錄不會被 Actions 辨識。
+此下載包是編譯來源，不是已編譯的 APK；GitHub 工作流程需要連網安裝建置工具。

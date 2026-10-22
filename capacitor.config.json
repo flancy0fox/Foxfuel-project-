@@ -1,0 +1,11 @@
+{
+  "appId": "com.currencypocket.mobile",
+  "appName": "匯率口袋",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
