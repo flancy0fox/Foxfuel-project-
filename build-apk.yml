@@ -18,6 +18,8 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
       - name: Prepare app files from flat repository
         run: |
           mkdir -p www
